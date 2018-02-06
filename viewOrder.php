@@ -4,10 +4,10 @@
 
 <section class="main-container">
 	<div class="main-wrapper">
-		<h2>Home</h2>
+		<h2>view Order</h2>
 		<?php 
 			if (isset($_SESSION['u_id'])){
-				echo 'You are logged in!';
+				echo '<h1>You are viewing order №' . $_GET["order_id"] . '</h1>';
 			}
 
 		?>
